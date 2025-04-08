@@ -13,7 +13,7 @@ library(tidyverse)
 # file names
 datadir_raw <- file.path("data","raw")
 
-datadir_processed <- file.path("data", "processed/")
+datadir_processed <- file.path("data", "processed")
 
 species_file <- "ASDN_Daily_species.csv"
 
@@ -50,6 +50,8 @@ Let's focus on the non-numeric values as a starting point:
 
 ```{r}
 snowsurvey_csv %>%
+  count(Snow_cover) %>%
+  filter(is.na(as.numeric(Snow_cover)))
 
 ```
 
@@ -68,22 +70,26 @@ snowsurvey_csv %>%
 Interestingly, when there is a "dot" for snow cover, it is also the case for all the other covers. Let's replace those with NA since there is no supplemental information in the provided metadata about the use of dots
 
 ```{r}
-snowsurvey_fixed <- 
+snowsurvey_fixed <- snowsurvey_csv %>%
+  mutate(Snow_cover = ifelse(Snow_cover == ".", NA, Snow_cover))
 ```
 
 #### `-` values
 
-Is he problem is similar with "-"?
+Is the problem is similar with "-"?
 
 ```{r}
-snowsurvey_csv 
+snowsurvey_csv %>%
+  filter(Snow_cover == "-") %>%
+  View()
 ```
 
 
 let's set it to NA:
 
 ```{r}
-snowsurvey_fixed <- 
+snowsurvey_fixed <- snowsurvey_csv %>%
+  mutate(Snow_cover = ifelse(Snow_cover == "-", NA, Snow_cover))
 ```
 
 #### `n/a` values
