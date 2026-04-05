@@ -36,7 +36,7 @@ Field data on shorebird ecology and environmental conditions were
 collected from 1993-2014 at 16 field sites in Alaska, Canada, and
 Russia.
 
-<img src="img/ASDN_network_map_2014.png" style="width:50.0%"
+<img src="img/ASDN_network_map_2014.png" style="width:70.0%"
 alt="Arctic Shorebird Demographics Network study sites across the North American Arctic for 2014." />
 
 <br>
