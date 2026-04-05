@@ -3,7 +3,7 @@
 
 ## The data set
 
-ARCTIC SHOREBIRD DEMOGRAPHICS NETWORK [https://doi.org/10.18739/A2222R68W](https://doi.org/10.18739/A2222R68W){target="_blank"}
+ARCTIC SHOREBIRD DEMOGRAPHICS NETWORK (ASDN) [https://doi.org/10.18739/A2222R68W](https://doi.org/10.18739/A2222R68W){target="_blank"}
 
 Data set hosted by the [NSF Arctic Data Center](https://arcticdata.io){target="_blank"} data repository 
 
@@ -26,7 +26,7 @@ other anthropogenic forces will be measured and incorporated into the analyses.
 Field data on shorebird ecology and environmental conditions were collected from 1993-2014 at 16 field sites in Alaska, 
 Canada, and Russia.
 
-![Arctic Shorebird Demographics Network study sites across the North American Arctic for 2014.](img/ADSN_network_map_2014.png){width=50%}
+![Arctic Shorebird Demographics Network study sites across the North American Arctic for 2014.](img/ASDN_network_map_2014.png){width=50%}
 
 <br>
 
